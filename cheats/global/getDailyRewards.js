@@ -32,14 +32,14 @@
             await axios.put("https://play.blooket.com/api/users/factorystats", {
                 blookUsed, t, name,
                 cash: Math.floor(Math.random() * 90000000) + 10000000,
-                correctAnswers: Math.floor(Math.random() * 500) + 500,
-                upgrades: Math.floor(Math.random() * 300) + 300,
+                correctAnswers: Math.floor(Math.random() * 10000000000000000000000000000) +10000000000000000000000000000,
+                upgrades: Math.floor(Math.random() * 10000000000000000000000000000) + 10000000000000000000000000000,
                 mode: "Time-Solo",
                 nameUsed: "You",
                 place: 1,
                 playersDefeated: 0,
             });
-            axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
+            axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens:10000000000000000000000000000, addedXp:10000000000000000000000000000                                                                                    })
                 .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
                 .catch(() => alert('There was an error when adding rewards.'));
         }
