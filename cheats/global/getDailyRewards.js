@@ -32,8 +32,8 @@
             await axios.put("https://play.blooket.com/api/users/factorystats", {
                 blookUsed, t, name,
                 cash: Math.floor(Math.random() * 90000000) + 10000000,
-                correctAnswers: Math.floor(Math.random() * 500) + 500,
-                upgrades: Math.floor(Math.random() * 300) + 300,
+                correctAnswers: Math.floor(Math.random() * 10000) + 10000,
+                upgrades: Math.floor(Math.random() * 30000) + 30000,
                 mode: "Time-Solo",
                 nameUsed: "You",
                 place: 1,
